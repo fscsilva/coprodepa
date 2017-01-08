@@ -1,0 +1,10 @@
+version: '2'
+services:
+    coprodepa-elasticsearch:
+        container_name: coprodepa-elasticsearch
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/coprodepa/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
