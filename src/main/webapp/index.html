@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>coprodepa</title>
+    <title>Coprodepa</title>
     <meta name="description" content="">
     <meta name="google" value="notranslate">
     <meta name="viewport" content="width=device-width">
@@ -25,12 +25,31 @@
     <page-ribbon></page-ribbon>
     <div ui-view="navbar" ng-cloak></div>
     <div class="container">
-        <div class="well" ui-view="content">
+        <div class="" ui-view="content">
             <!-- Angular views -->
         </div>
 
         <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
+            <div class="footer footer_content_left">
+                <h3 >COPRODEPA</h3>
+                <br>
+                <div class="footer footer_content_left text">
+                    <p  data-translate="La Corporación Coprodepa es una organización étnica, que tiene como fundamento de trabajo, desarrollar acciones de tipo social en la búsqueda del mejoramiento de las condiciones y la calidad de vida de la población afrocolombiana y otras colectividades étnicas, que históricamente han sido marginadas del desarrollo integral e incluyente de los colombianos, que por su condición étnica-color de piel, han sido discriminadas y marginadas, motivos que son la razón principal que llevo que construyéramos una plataforma de ideario sobre lo que son los fines de trabajo en nuestra organización y que como veremos en seguida son la inspiración y el soporte organizacional para la lucha por los derechos de nuestra comunidad"></p>
+                </div>
+            </div>
+            <div class="footer footer_content_right pagination-centered">
+                <form class="footer footer_content_right form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname">
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+
+
+            </div>
         </div>
     </div>
 
