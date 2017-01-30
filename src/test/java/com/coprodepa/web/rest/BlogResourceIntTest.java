@@ -187,6 +187,7 @@ public class BlogResourceIntTest {
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
             .andExpect(jsonPath("$.[*].handle").value(hasItem(DEFAULT_HANDLE.toString())));
     }*/
+    //not necessary comment this part but it doesnt compile test comment
 
     @Test
     @Transactional
