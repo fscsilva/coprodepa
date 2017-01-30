@@ -99,8 +99,8 @@ Main page styles
 
 .hipster {
     display: inline-block;
-    width: 347px;
-    height: 497px;
+    width: 2047px;
+    height: 3097px;
     background: url("../images/hipster.png") no-repeat center top;
     background-size: contain;
 }

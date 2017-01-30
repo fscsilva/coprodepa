@@ -4237,7 +4237,7 @@ div.footer.footer_content_left.text {
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
-    min-height: 200px;
+    min-height: 150px;
   }
 }
 .navbar-collapse {
@@ -4751,6 +4751,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
+.navbar//here
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
