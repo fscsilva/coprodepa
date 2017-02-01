@@ -4187,6 +4187,42 @@ div.footer.footer_content_left {
 
 }
 
+div.navbar-style{
+    text-align: center;
+    margin: auto;
+    padding: 95px 0;
+}
+ul.navbar-style{
+    overflow: auto;
+    list-style-type: none;
+}
+li.navbar-style{
+  height: 20px;
+  float: left;
+  margin-right: 0px;
+  padding: 0 60px;
+}
+li.navbar-style a {
+  text-decoration: none;
+  color: #484746;
+  font: 17px/1 Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+li.navbar-style.active a {
+  font-weight: bold;
+  color: #3493BD;
+}
+p.navbar-style{
+text-align: center;
+color: #3493BD;
+}
+
 div.footer.footer_content_right {
   float: right;
   width: 30%;
@@ -4225,7 +4261,7 @@ div.footer.footer_content_left.text {
 // change the height of navbar here
 .navbar {
   position: relative;
-  min-height: 200px;
+  min-height: 240px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }

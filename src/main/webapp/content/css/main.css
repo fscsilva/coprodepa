@@ -69,12 +69,13 @@ Browser Upgrade Prompt
 Logo styles
 ========================================================================== */
 .navbar-brand.logo {
-    padding: 5px 15px;
+    padding: 5px 100px;
 }
 
 .logo .logo-img {
-    height: 45px;
-    display: inline-block;
+    //height: 55px;
+    //display: inline-block;
+    margin: auto;
 }
 
 /* ==========================================================================
@@ -99,9 +100,17 @@ Main page styles
 
 .hipster {
     display: inline-block;
-    width: 2047px;
-    height: 3097px;
+    width: 1200px;
+    height: 600px;
     background: url("../images/hipster.png") no-repeat center top;
+    background-size: contain;
+}
+
+.media-img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/alianzas-.png") no-repeat center top;
     background-size: contain;
 }
 
