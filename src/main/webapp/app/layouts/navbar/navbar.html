@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
+    <div class="">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" ng-click="vm.toggleNavbar()">
                 <span class="sr-only">Toggle navigation</span>
@@ -15,12 +15,39 @@
 
         </div>
         <div class="navbar-style">
-            <ul class="navbar-style">
-                <li class="navbar-style active"><a>Inicio</a></li>
-                <li class="navbar-style"><a>Quienes Somos</a></li>
-                <li class="navbar-style"><a>Proyectos</a></li>
-                <li class="navbar-style"><a>Coprojoven</a></li>
+            <ul class="navbar-style ">
+                <li class="navbar-style active"><a><strong>Inicio</strong></a></li>
+                <li class="dropdown navbar-style ">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <strong>Quienes Somos</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ui-sref-active="active" >
+                            <a ui-sref="somos" ng-click="vm.collapseNavbar()" >
+                                <span data-translate="SOMOS">SOMOS</span>
+
+                            </a></li>
+                        <li><a href="#">OBJETO SOCIAL</a></li>
+                        <li><a href="#">RESEÑA HISTORICA</a></li>
+                        <li><a href="#">FUNDADORES Y SOCIOS</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </li>
+                <li class="dropdown navbar-style">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <strong>Normatividad</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">LEYES</a></li>
+                    </ul>
+
+                </li>
+                <li class="navbar-style"><a><strong>Coprojoven</strong></a></li>
             </ul>
+        </div>
+        <div>
+            <p class="navbar-style title lead" data-translate="Corporacion para el desarrollo Afrocolombiano"> </p>
+            <p class="navbar-style  title lead" ><strong>COPRODEPA</strong> </p>
         </div>
         <div class=" ng-hide">
         <div class="navbar-collapse ng-hide" uib-collapse="vm.isNavbarCollapsed" ng-switch="vm.isAuthenticated()">
@@ -192,3 +219,15 @@
         </div>
     </div>
 </nav>
+
+<script>
+$( document ).ready(function() {
+
+    $('ul li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+    });
+
+</script>
