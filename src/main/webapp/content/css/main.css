@@ -100,8 +100,8 @@ Main page styles
 
 .hipster {
     display: inline-block;
-    width: 1200px;
-    height: 600px;
+    width: 100%;
+    height: 343px;
 
 }
 .hipster.first_img {
@@ -124,6 +124,11 @@ Main page styles
     background: url("../images/banner/5grupoteno.jpg") no-repeat center top;
     background-size: contain;
 }
+.hipster.somos-img {
+    background: url("../images/interac/somos.png") no-repeat center top;
+    background-size: contain;
+}
+
 
 .vertical-content {
     display: inline-block;
@@ -204,6 +209,30 @@ Main page styles
 }
 .media-img.vinculos {
     background: url("../images/vinculos.png") no-repeat center top;
+    background-size: contain;
+}
+.media-img.objeto-social {
+    background: url("../images/interac/mision-.png") no-repeat center top;
+    background-size: contain;
+}
+.media-img.mision {
+    background: url("../images/interac/somos-.png") no-repeat center top;
+    background-size: contain;
+}
+.media-img.vision {
+    background: url("../images/interac/somos..png") no-repeat center top;
+    background-size: contain;
+}
+.media-img.resena-historica-1 {
+    background: url("../images/interac/resena-historica.png") no-repeat center top;
+    background-size: contain;
+}
+.media-img.resena-historica-2 {
+    background: url("../images/interac/resena-historica-2.png") no-repeat center top;
+    background-size: contain;
+}
+.media-img.fundadores-img{
+    background: url("../images/interac/fundadores.png") no-repeat center top;
     background-size: contain;
 }
 

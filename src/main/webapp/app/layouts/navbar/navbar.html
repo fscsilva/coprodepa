@@ -16,20 +16,20 @@
         </div>
         <div class="navbar-style">
             <ul class="navbar-style ">
-                <li class="navbar-style active"><a><strong>Inicio</strong></a></li>
+                <li class="navbar-style active home"><a><strong>Inicio</strong></a></li>
                 <li class="dropdown navbar-style ">
                     <a class="dropdown-toggle" data-toggle="dropdown">
                         <strong>Quienes Somos</strong>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ui-sref-active="active" >
+                        <li class="somos" ui-sref-active="active" >
                             <a ui-sref="somos" ng-click="vm.collapseNavbar()" >
                                 <span data-translate="SOMOS">SOMOS</span>
 
                             </a></li>
-                        <li><a href="#">OBJETO SOCIAL</a></li>
-                        <li><a href="#">RESEÑA HISTORICA</a></li>
-                        <li><a href="#">FUNDADORES Y SOCIOS</a></li>
+                        <li class="objeto-social-class"><a href="#">OBJETO SOCIAL</a></li>
+                        <li class="resena-historica"><a href="#">RESEÑA HISTORICA</a></li>
+                        <li class="fundadores"><a href="#">FUNDADORES Y SOCIOS</a></li>
                         <li class="divider"></li>
                     </ul>
                 </li>
@@ -222,6 +222,47 @@
 
 <script>
 $( document ).ready(function() {
+
+    $("#somos").hide();
+    $("#objeto-social").hide();
+    $("#resena-historica").hide();
+    $("#fundadores").hide();
+
+    $( ".somos" ).on( "click", function() {
+        $("#home").hide();
+        $("#objeto-social").hide();
+        $("#resena-historica").hide();
+        $("#fundadores").hide();
+        $("#somos").show();
+    });
+    $( ".objeto-social-class" ).on( "click", function() {
+        $("#home").hide();
+        $("#somos").hide();
+        $("#resena-historica").hide();
+        $("#fundadores").hide();
+        $("#objeto-social").show();
+    });
+    $( ".resena-historica" ).on( "click", function() {
+        $("#home").hide();
+        $("#somos").hide();
+        $("#objeto-social").hide();
+        $("#fundadores").hide();
+        $("#resena-historica").show();
+    });
+    $( ".home" ).on( "click", function() {
+        $("#resena-historica").hide();
+        $("#somos").hide();
+        $("#objeto-social").hide();
+        $("#fundadores").hide();
+        $("#home").show();
+    });
+    $( ".fundadores" ).on( "click", function() {
+        $("#resena-historica").hide();
+        $("#somos").hide();
+        $("#objeto-social").hide();
+        $("#home").hide();
+        $("#fundadores").show();
+    });
 
     $('ul li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
