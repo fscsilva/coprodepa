@@ -63,6 +63,7 @@ h1 {
   margin: .67em 0;
   font-size: 2em;
   color: #484746;
+
 }
 mark {
   color: #000;
@@ -4234,7 +4235,7 @@ font-weight: bold;
 
 div.footer.footer_content_right {
   float: right;
-  width: 30%;
+  width: 40%;
   position: relative;
   color: #484746;
   margin-bottom: 20px;
@@ -4249,6 +4250,8 @@ div.footer.footer_content_right {
 div.footer.footer_content_right.form {
   float: center;
   position: relative;
+  display:block;
+  margin:0 auto;
   color: #484746;
   border: 1px solid transparent;
   background-color: transparent;

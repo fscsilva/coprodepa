@@ -128,7 +128,18 @@ Main page styles
     background: url("../images/interac/somos.png") no-repeat center top;
     background-size: contain;
 }
-
+.hipster.resena-historica-1 {
+    background: url("../images/interac/resena-historica.png") no-repeat center top;
+    background-size: contain;
+}
+.hipster.resena-historica-2 {
+    background: url("../images/interac/resena-historica-2.png") no-repeat center top;
+    background-size: contain;
+}
+.hipster.fundadores-img{
+    background: url("../images/interac/fundadores.png") no-repeat center top;
+    background-size: contain;
+}
 
 .vertical-content {
     display: inline-block;
@@ -223,18 +234,7 @@ Main page styles
     background: url("../images/interac/somos..png") no-repeat center top;
     background-size: contain;
 }
-.media-img.resena-historica-1 {
-    background: url("../images/interac/resena-historica.png") no-repeat center top;
-    background-size: contain;
-}
-.media-img.resena-historica-2 {
-    background: url("../images/interac/resena-historica-2.png") no-repeat center top;
-    background-size: contain;
-}
-.media-img.fundadores-img{
-    background: url("../images/interac/fundadores.png") no-repeat center top;
-    background-size: contain;
-}
+
 
 
 
